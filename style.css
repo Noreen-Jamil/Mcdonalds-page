@@ -1,0 +1,191 @@
+	*{
+			box-sizing: border-box;
+		}
+		body{
+			background-color: #f1f1f1;
+		}
+		header{
+			display: flex;
+			justify-content: flex-end;
+			padding:7px 0;
+			
+		}
+		header>a{
+			
+			color:#566573 ;
+			margin-right:2%;
+		}
+		nav{
+			background-color:#525252;
+			border-radius: 10px;
+			padding:0;
+			box-shadow: 2px 2px 6px 1px #808B96;
+
+
+		}
+		nav img{
+			width:20px;
+			height:20px;
+			border:1.5px solid white;
+			border-radius: 50px;
+			vertical-align: middle;
+			margin-right: 5px;
+		}
+		a{
+			text-decoration: none;
+		}
+		nav a{
+			color:white;
+			font-size: 18px;
+			display: inline-block;
+			padding:1% 2%;
+			border-right: 2px solid #566573;
+			vertical-align: middle;
+		
+		}
+		.drop-down-container>button{
+			color:white;
+			font-size: 18px;
+			display: block;
+			padding:7% 6%;
+			background-color:#525252;
+			border:none;
+			width:12vw;
+			/* its important to give width to drop down button*/
+			
+		}
+		nav button:hover #dropdown{
+			color:#ABB2B9  ;
+		}
+
+		#logo-a{
+			border-radius:10px 0 0 10px;
+			background-color: #c8161d;
+		}
+		#logo-a:hover{
+			color:white;
+		}
+		i{
+			font-size: 20px;
+			color:grey;
+			margin-right: 5px;
+		}
+		i#dropdown{
+			color:white;
+			font-size:14px;
+			margin-left: 2px;
+		}
+		a:hover #dropdown{
+			color:#ABB2B9  ;
+		}
+		.drop-down-container{
+			position: relative;
+			display: inline-block;
+			border-right: 2px solid #566573;
+			
+		}
+		.content-container{
+			display: none;
+			position: absolute;
+			top:38px;
+			z-index:1;
+			background-color:#525252;
+			color:white;
+			width: 100%;
+
+		}
+		.content-container>a{
+			display: block;
+			text-decoration: none;
+			color:white;
+			font-size: 18px;
+			display: inline-block;
+			padding:4% 8% ;
+			border-bottom: 1px solid grey;
+			width:100%;
+			color:white;
+			
+		}
+		.content-container>a:hover{
+			background-color:#808B96;
+
+		}
+		.drop-down-container:hover .content-container{
+			display: block;
+
+		}
+		section{
+			position: relative;
+
+		}
+		section>div{
+			width:100%;
+			height:86vh;
+			border-radius: 20px;
+			margin-top: 0.5%;
+			opacity: 0.9;
+			box-shadow: 2px 2px 6px 1px #808B96;
+			background-image: url("images/junk-food3.jpg");
+			background-size: 100% 86vh;
+			background-repeat: no-repeat;
+
+		}
+		  #anim{
+        animation-name:images;
+        animation-duration:20s;
+        animation-iteration-count: infinite;
+      }
+      @keyframes images{
+        0%{
+          background-image:url("images/food11.jpg");
+          
+        }
+        15%{
+          background-image:url("images/food2.jpg");
+          
+        }
+        30%{
+          background-image:url("images/food12.jpg");
+         
+        }
+        45%{
+          background-image:url("images/food3.jpg");
+         
+        }
+       
+        60%{
+          background-image:url("images/food4.jpg");
+         
+        }
+        75%{
+          background-image:url("images/food5.jpg");
+         
+        }
+        80%{
+          background-image:url("images/food6.jpg");
+         
+        }
+        100%{
+          background-image:url("images/food7.jpg");
+         
+        }
+      }
+		
+		section>button{
+			position: absolute;
+			z-index: 1;
+			top:70vh;
+			left:35vw;
+			font-size: 30px;
+			border:none;
+			color:white;
+			background-color: #ea3f2e;
+			border-radius: 5px;
+			padding:1% 5%;
+			box-shadow: 2px 2px 6px 1px #808B96;
+
+		}
+		section>button:hover{
+			cursor: pointer;
+			margin:1% 0;
+		}
